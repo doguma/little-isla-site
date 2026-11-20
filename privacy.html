@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Isla — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f7fa;
+      --border: #dee0e8;
+      --text: #171a24;
+      --muted: #666e80;
+      --accent: #2966f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .bar {
+      height: 3px;
+      background: linear-gradient(90deg, #f2454d, #fa8f24, #f5c729, #24bd75, #1fa8f0, #336bf5, #8f4df0);
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 6px; color: var(--accent); }
+    h2 { font-size: 1.05rem; margin: 26px 0 8px; }
+    p, li { font-size: 0.92rem; }
+    .sub { color: var(--muted); margin-top: 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { margin-bottom: 24px; font-size: 0.85rem; }
+    nav a { margin-right: 16px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <nav>
+      <a href="./">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </nav>
+
+    <h1>Privacy Policy for Little Isla</h1>
+    <p class="sub">Last updated: November 20, 2026</p>
+
+    <p>Little Isla is designed as a private, on-device voice companion. We do not operate a backend server for conversations, user accounts, analytics, or advertising.</p>
+
+    <h2>1. Data Stored on Your Device</h2>
+    <ul>
+      <li><strong>Conversations, Memories, and Summaries:</strong> Stored locally on your iPhone in the app's Application Support directory (<code>little-isla-data.json</code>) with iOS complete file protection and backup exclusion requested.</li>
+      <li><strong>Preferences &amp; Purchase Status:</strong> Your selected theme, voice style, model choice, and offline entitlement cache for <em>Little Isla Forever</em> are stored locally on your device.</li>
+      <li><strong>Deleting Your Data:</strong> You can clear chat history, delete individual memories or summaries in Settings, or uninstall the app to remove all locally stored data.</li>
+    </ul>
+
+    <h2>2. Speech Recognition &amp; Voice</h2>
+    <ul>
+      <li><strong>Microphone &amp; Speech Recognition:</strong> Little Isla uses Apple's on-device Speech Recognition (<code>requiresOnDeviceRecognition = true</code>). Your voice audio is processed locally on your iPhone and is not uploaded by Little Isla to any server.</li>
+      <li><strong>Voice Output:</strong> Isla's pixel voices are synthesized procedurally on-device. If you optionally switch to iOS System TTS, speech synthesis is handled locally by iOS.</li>
+    </ul>
+
+    <h2>3. On-Device AI Models &amp; Network Access</h2>
+    <ul>
+      <li><strong>Initial Model Download:</strong> On first setup (or when switching models), the app downloads public open-weight MLX model files from Hugging Face over HTTPS. No personal conversations, microphone audio, or memories are transmitted during model downloads.</li>
+      <li><strong>Offline Operation:</strong> After a model is downloaded, all AI inference runs locally on your iPhone with no external AI API calls.</li>
+    </ul>
+
+    <h2>4. In-App Purchases</h2>
+    <p>One-time purchases (<em>Little Isla Forever</em>) and restores are processed directly by Apple via StoreKit. Little Isla does not collect or store your payment information or Apple Account details.</p>
+
+    <h2>5. Third-Party Tracking &amp; Analytics</h2>
+    <p>Little Isla does <strong>not</strong> use third-party advertising SDKs, analytics trackers, or cross-app tracking.</p>
+
+    <h2>6. Contact</h2>
+    <p>If you have questions about this Privacy Policy, please reach out via our support page: <a href="https://github.com/doguma/little-isla-site/issues">github.com/doguma/little-isla-site/issues</a></p>
+
+    <footer>
+      &copy; 2026 Little Isla &middot; <a href="./">Support</a>
+    </footer>
+  </main>
+</body>
+</html>

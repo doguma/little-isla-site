@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Isla — Support</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f7fa;
+      --border: #dee0e8;
+      --text: #171a24;
+      --muted: #666e80;
+      --accent: #2966f0;
+      --violet: #7d40e6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .bar {
+      height: 3px;
+      background: linear-gradient(90deg, #f2454d, #fa8f24, #f5c729, #24bd75, #1fa8f0, #336bf5, #8f4df0);
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 6px; color: var(--accent); }
+    h2 { font-size: 1.05rem; margin: 28px 0 10px; }
+    p, li { font-size: 0.92rem; color: var(--text); }
+    .sub { color: var(--muted); margin-top: 0; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 16px 18px;
+      margin: 16px 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { margin-bottom: 24px; font-size: 0.85rem; }
+    nav a { margin-right: 16px; }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <nav>
+      <a href="./">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </nav>
+
+    <h1>Little Isla</h1>
+    <p class="sub">Private on-device voice companion for iOS</p>
+
+    <div class="card">
+      <strong>&gt; Need help?</strong>
+      <p style="margin-bottom: 0;">
+        If you have a question, bug report, or feedback, please open an issue on our support board:<br />
+        <a href="https://github.com/doguma/little-isla-site/issues">github.com/doguma/little-isla-site/issues</a>
+      </p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="card">
+      <strong>&gt; Why does first-time setup download a model?</strong>
+      <p>Little Isla runs open-weight AI models directly on your iPhone using MLX so your conversations never leave your device. You can choose between Qwen3 4B (~2.3 GB), Qwen2.5 3B (~1.8 GB), or Qwen3 1.7B (~1.0 GB) before downloading. Wi-Fi is recommended for the one-time download.</p>
+
+      <strong>&gt; Speech recognition says offline English isn't available</strong>
+      <p>Little Isla uses Apple's on-device Speech Recognition and never falls back to cloud servers. Make sure English (U.S.) dictation/speech is enabled in iOS Settings &rarr; General &rarr; Keyboard &rarr; Enable Dictation.</p>
+
+      <strong>&gt; How do I restore Little Isla Forever?</strong>
+      <p>Long-press Isla (or tap <em>Settings</em>) and select <strong>&gt; Restore Purchases</strong>. Family Sharing is supported.</p>
+
+      <strong>&gt; How do I delete my local data?</strong>
+      <p style="margin-bottom: 0;">Open Settings to clear chat history or delete individual memories and summaries, or uninstall the app to remove all locally stored data.</p>
+    </div>
+
+    <footer>
+      &copy; 2026 Little Isla &middot; <a href="./privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
